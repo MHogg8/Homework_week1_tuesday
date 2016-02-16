@@ -62,8 +62,6 @@ end
 
 
 
-
-
 def date_until_christmas(date_a, date_b)
   require 'date'
   start_date= Date.parse(date_a)
@@ -72,3 +70,11 @@ def date_until_christmas(date_a, date_b)
   return outcome
 end
 
+def age_of_person(date_a, date_b)
+  require 'date'
+    birth_date = Date.parse(date_a)
+    current_date = Date.parse(date_b)
+    outcome = (birth_date - current_date)
+    age_in_years = outcome.to_i / 365
+    return age_in_years
+end

@@ -86,9 +86,11 @@ class Functions_Practice < MiniTest::Test
   end
 
   # #Given a date of birth, calculate how old a person born on that date would be
-  # def test_age_of_person()
+  def test_age_of_person()
+    age = age_of_person('15-02-2016', '05-08-1980')
+    assert_equal(35, age)
 
-  # end
+  end
 
 
 end
