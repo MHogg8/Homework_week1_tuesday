@@ -73,10 +73,10 @@ class Functions_Practice < MiniTest::Test
   end
 
   # # #Given the radius of a sphere calculate the volume
-  # def test_volume_of_sphere()
-
-
-  # end
+  def test_volume_of_sphere()
+    sphere = volume_of_sphere(4)
+    assert_equal(267.95, sphere)
+  end
 
   # #http://ruby-doc.org/stdlib-2.1.1/libdoc/date/rdoc/Date.html
   # #Days until christmas, Calculate how many nights there are from today until Christmas morning

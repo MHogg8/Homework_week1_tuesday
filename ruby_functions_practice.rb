@@ -59,7 +59,13 @@ def volume_of_cube(x)
   return x * x * x
 end
 
-
+def volume_of_sphere(x) # V = 4/3 3.14r*r*r
+    radius = x * x * x
+    get_float = radius * 4/3.to_f
+    final = get_float * 3.14
+    final = final.round(2)
+    return final
+end
 
 
 def date_until_christmas(date_a, date_b)
@@ -69,6 +75,7 @@ def date_until_christmas(date_a, date_b)
   outcome = start_date - end_date
   return outcome
 end
+
 
 def age_of_person(date_a, date_b)
   require 'date'
